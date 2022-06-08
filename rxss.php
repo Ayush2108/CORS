@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="referrer" content="unsafe-url">
 <title>Referer based XSS testing</title>
 </head>
+<meta name="referrer" content="unsafe-url">
 <body>
 <script>window.location.replace('<?php echo $_GET['target']; ?>');</script>
 </body>
