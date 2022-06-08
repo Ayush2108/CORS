@@ -2,18 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="referrer" content="no-referrer-when-downgrade"> 
-	<meta refrrerpolicy=>
+<meta name="referrer" content="unsafe-url">
 <title>Referer based XSS testing</title>
 </head>
 <body>
-<script>
-
-	window.location.replace('<?php echo $_GET['target']; ?>');
-	referrer: ""
-
-
-</script>
+<script>window.location.replace('<?php echo $_GET['target']; ?>');</script>
 </body>
 </html>
