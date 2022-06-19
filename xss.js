@@ -1,4 +1,6 @@
-<script>
-alert(document.getElementsByName("csrf-token")[0].content)
+alert(1);
+function cors() {
+  alert(document.getElementsByTagName("meta")[2].content)
+    }
+ 
 
-</script>
