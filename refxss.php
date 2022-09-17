@@ -6,6 +6,6 @@
 </head>
 <meta name="referrer" content="unsafe-url">
 <body>
-<script>window.location.replace('<?php echo $_GET['target']; ?>');</script>
+<script>window.location.replace('<?php echo $_GET['go']; ?>');</script>
 </body>
 </html>
